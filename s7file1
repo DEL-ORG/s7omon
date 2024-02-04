@@ -8,9 +8,7 @@ services:    # Define the services (containers) of the application
       - "8080:80"  # Map port 8080 on the host to port 80 in the container
 
   app:       # Another service
-    image: myapp:latest  # Replace with the actual image name
-    ports:
-      - "5000:5000"
+   
     environment:
       - DATABASE_URL=postgres://user:password@db:5432/mydatabase  # Example environment variable
 
