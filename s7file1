@@ -19,3 +19,16 @@ services:    # Define the services (containers) of the application
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=mydatabase
 
+FROM <base_image>
+
+# Set working directory to /app
+WORKDIR /app
+
+# Copy PostgreSQL configuration file
+COPY postgresql.conf /etc/postgresql/postgresql.conf
+
+# Set company label information
+LABEL maintainer="Your Name <your.email@example.com>"
+LABEL company.name="Your Company Name"
+LABEL company.phone="123-456-7890"
+LABEL company.address="123 Company St, City, Country"
