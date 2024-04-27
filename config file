@@ -1,0 +1,38 @@
+# Sample Configuration File
+
+# General settings
+settings:
+  name: My Application
+  version: 1.0
+  environment: development
+
+# Database configuration
+database:
+  type: PostgreSQL
+  host: localhost
+  port: 5432
+  username: myuser
+  password: mypassword
+  database_name: mydatabase
+
+# Logging configuration
+logging:
+  level: info
+  file: /var/log/myapp.log
+
+# API configuration
+api:
+  base_url: http://localhost:8000
+  timeout: 30
+  max_retries: 3
+
+# Security settings
+security:
+  secret_key: mysecretkey123
+  encryption_algorithm: AES256
+
+# Email configuration
+email:
+  provider: SendGrid
+  api_key: SG.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  from_address: noreply@example.com
